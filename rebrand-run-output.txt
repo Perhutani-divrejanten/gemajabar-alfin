@@ -1,0 +1,12 @@
+﻿ForEach-Object : Exception calling "ReadAllText" with "1" argument(s): "The 
+process cannot access the file 'C:\KULIAH\MAGANG\Magang di Perhutani\Gema 
+Jabar\rebrand-run-output.txt' because it is being used by another process."
+At C:\KULIAH\MAGANG\Magang di Perhutani\Gema 
+Jabar\rebrand-to-gema-jabar.ps1:235 char:5
++     ForEach-Object {
++     ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [ForEach-Object], MethodInvoca 
+   tionException
+    + FullyQualifiedErrorId : IOException,Microsoft.PowerShell.Commands.ForEac 
+   hObjectCommand
+ 

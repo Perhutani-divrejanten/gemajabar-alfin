@@ -9,19 +9,19 @@ Saya telah membuat sistem otomatis untuk generate **34 folder website portal ber
 ### 1. **`tools/sites-config.json`**
 Template konfigurasi untuk 34 portal berita. Berisi:
 - **folderName**: Nama folder untuk setiap site (site-01, site-02, dst)
-- **siteName**: Nama portal berita (akan replace "BizNews")
-- **email**: Email portal (akan replace "IndonesiaDaily33@gmail.com")
-- **socialHandle**: Handle social media (akan replace "indonesiadaily")
+- **siteName**: Nama portal berita (akan replace "Gema Jabar")
+- **email**: Email portal (akan replace "gemajabar@gmail.com")
+- **socialHandle**: Handle social media (akan replace "gemajabar")
 - **colors**: Tema warna
-  - **primary**: Warna utama kuning (contoh: #FFCC00 → custom)
-  - **dark**: Warna gelap hitam (contoh: #1E2024 → custom)
+  - **primary**: Warna utama kuning (contoh: #9A3412 → custom)
+  - **dark**: Warna gelap hitam (contoh: #9A3412 → custom)
   - **secondary**: Warna sekunder
 
 ### 2. **`tools/generate-sites.js`**
 Script Node.js yang akan:
 1. Membaca `sites-config.json`
 2. Untuk setiap dari 34 site:
-   - Copy folder **BizNews** → folder baru
+   - Copy folder **Gema Jabar** → folder baru
    - Replace otomatis di **semua file** (.html, .css, .js, .json):
      - Nama portal berita
      - Email
@@ -113,13 +113,13 @@ Script akan mengganti di **semua file** (.html, .css, .js):
 
 | Yang Direplac | Diganti Dengan |
 |---|---|
-| `BizNews` | `siteName` dari config |
-| `IndonesiaDaily` | `siteName` (tanpa spaces) |
-| `indonesiadaily` | `socialHandle` |
-| `IndonesiaDaily33@gmail.com` | `email` |
-| `#FFCC00` (primary) | Warna primary dari config |
-| `#1E2024` (dark) | Warna dark dari config |
-| `#31404B` (secondary) | Warna secondary dari config |
+| `Gema Jabar` | `siteName` dari config |
+| `gemajabar` | `siteName` (tanpa spaces) |
+| `gemajabar` | `socialHandle` |
+| `gemajabar@gmail.com` | `email` |
+| `#9A3412` (primary) | Warna primary dari config |
+| `#9A3412` (dark) | Warna dark dari config |
+| `#7F2B2B` (secondary) | Warna secondary dari config |
 
 ---
 
@@ -185,7 +185,7 @@ Jika belum punya ide warna, berikut saran:
 ✅ **Consistent**: Semua file ter-replace dengan sempurna  
 ✅ **Flexible**: Gampang di-edit dan di-update  
 ✅ **Scalable**: Bisa di-expand ke lebih dari 34 jika perlu  
-✅ **Safe**: Original folder BizNews tidak akan di-delete  
+✅ **Safe**: Original folder Gema Jabar tidak akan di-delete  
 
 ---
 
